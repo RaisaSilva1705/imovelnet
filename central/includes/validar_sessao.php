@@ -4,10 +4,6 @@ ini_set('display_errors', 1);
 
 if($_SESSION['nome'] != null){
     $restaSessao = $_SESSION['expire'] - strtotime('now');
-    echo $restaSessao . '<br>'; 
-    echo $_SESSION['expire'] . '<br>';
-    echo strtotime('now');
-
 
     if ($restaSessao < 1) {
         session_destroy();

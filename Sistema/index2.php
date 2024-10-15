@@ -27,7 +27,7 @@ ini_set('display_errors', 1);
     </head>
     <body>
         <!-- Navbar -->
-        <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
             <div class='container-fluid'>
                 <a class='navbar-brand' href='#'>ImovelNet - PÁGINA DO FUNCIONÁRIO</a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
@@ -35,10 +35,10 @@ ini_set('display_errors', 1);
                 </button>
                 <div class='collapse navbar-collapse' id='navbarNav'>
                     <ul class='navbar-nav ms-auto'>
-                        <li class='nav-item'><a class='nav-link' href='./Clientes/index.php'>Clientes</a></li>                    
+                        <li class='nav-item'><a class='nav-link' href='./Clientes/index.php'>Clientes</a></li>
+                        <li class='nav-item'><a class='nav-link' href='./Imoveis/index.php'>Imóveis</a></li>                
+                        <li class='nav-item'><a class='nav-link' href='./Funcionarios/index.php'>Funcionários</a></li>
                         <li class='nav-item'><a class='nav-link' href='./Financeiro/index.php'>Financeiro</a></li>
-                        <li class='nav-item'><a class='nav-link' href='./Funcionarios/index.php'>Funcionários</a></li>                    
-                        <li class='nav-item'><a class='nav-link' href='./Imoveis/index.php'>Imóveis</a></li>
                         <li class='nav-item'><a class='nav-link active' href='../index.php'>Menu Principal</a></li>
                         <li class='nav-item'><a class='nav-link active' href="../central/includes/sair.php">Sair</a></li>
                     </ul>
@@ -47,7 +47,7 @@ ini_set('display_errors', 1);
         </nav>
 
         <!-- Banner -->
-        <div class="container-fluid bg-dark text-white text-center p-5">
+        <div class="container-fluid bg-secondary text-white text-center p-5">
             <?php
                 session_start();
                 include "../central/includes/validar_sessao.php";
@@ -58,11 +58,50 @@ ini_set('display_errors', 1);
                     $_SESSION["msg"] = null;
                 }
             ?>
-            <h3>Index pagina CENTRAL</h3>
-            <p>Menu do funcionário</p>     
+            <h3>Menu do funcionário</h3>
         </div>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!-- Dashboard Cards -->
+        <div class="container d-flex justify-content-center align-items-center content">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Clientes</h5>
+                            <p class="card-text">Gerenciamento dos clientes.</p>
+                            <a href="./Clientes/index.php" class="btn btn-light">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card text-white bg-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Imóveis</h5>
+                            <p class="card-text">Administrar os imóveis disponíveis.</p>
+                            <a href="./Imoveis/index.php" class="btn btn-light">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card text-white bg-warning">
+                        <div class="card-body">
+                            <h5 class="card-title">Funcionários</h5>
+                            <p class="card-text">Gerenciamento dos funcionários.</p>
+                            <a href="./Funcionarios/index.php" class="btn btn-light">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Financeiro</h5>
+                            <p class="card-text">Conferir as contas a pagar.</p>
+                            <a href="./Financeiro/index.php" class="btn btn-light">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="bg-light text-center text-lg-start">
