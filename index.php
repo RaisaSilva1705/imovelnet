@@ -34,7 +34,7 @@ include "./central/includes/menu_site_externo.php";
     <?php echo $menu_nav; ?>
 
     <!-- Banner -->
-    <div class="container-fluid bg-dark text-white text-center p-5">
+    <div class="container-fluid bg-secondary text-white text-center p-5">
         <h3>Encontre sua Casa dos Sonhos</h3>
         <p>As melhores propriedades ao seu alcance</p>
     </div>

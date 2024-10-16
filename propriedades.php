@@ -35,7 +35,7 @@ include './central/includes/menu_site_externo.php';
     ?>
 
     <!-- Banner -->
-    <div class="container-fluid bg-dark text-white text-center p-5">
+    <div class="container-fluid bg-secondary text-white text-center p-5">
         <h3>Busque uma Propriedade</h3>
     </div>
 

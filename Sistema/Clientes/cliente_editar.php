@@ -159,10 +159,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-md-3">
                     <label for="tipo_cliente" class="form-label">Tipo de Cliente</label>
                     <select class="form-select" id="tipo_cliente" name="tipo_cliente" required>
-                        <option value="INQUILICO" <?php if ($cliente['tipo_cliente'] == 'PROPRIETARIO') echo 'selected'; ?>>Proprietário</option>
+                        <option value="PROPRIETARIO" <?php if ($cliente['tipo_cliente'] == 'PROPRIETARIO') echo 'selected'; ?>>Proprietário</option>
                         <option value="COMPRADOR" <?php if ($cliente['tipo_cliente'] == 'COMPRADOR') echo 'selected'; ?>>Comprador</option>
                         <option value="VENDEDOR" <?php if ($cliente['tipo_cliente'] == 'VENDEDOR') echo 'selected'; ?>>Vendedor</option>
-                        <option value="VENDEDOR" <?php if ($cliente['tipo_cliente'] == 'LOCADOR') echo 'selected'; ?>>Locador</option>
+                        <option value="LOCADOR" <?php if ($cliente['tipo_cliente'] == 'LOCADOR') echo 'selected'; ?>>Locador</option>
                     </select>
                 </div>
                 <div class="col-md-3">

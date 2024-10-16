@@ -132,13 +132,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $m2, $qtd_fotos, $cep, $endereco, $endereco_numero, 
         $complemento, $bairro, $cidade, $estado, $obs, $status, $id_imovel);
 
-    session_start();
     if ($stmt->execute()) {
         $_SESSION["msg"] = "<div class='alert alert-primary' role='aviso'>
                                 Dados atualizados com sucesso!
                             </div>";
-        //header("Location: imovel_listagem.php"); // Redirecionar para a listagem de imoveis
-        //exit();
+        header("Location: imovel_listagem.php"); // Redirecionar para a listagem de imoveis
+        exit();
     } else {
         echo "Erro ao atualizar os dados: " . $conn->error;
     }

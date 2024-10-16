@@ -37,8 +37,8 @@ if(isset($_SESSION['nome']) && $_SESSION['nome'] != null) {
         </div>
     </nav>
     <div class="container">
-        <div class="row justify-content-center login-container">
-            <div class="col-md-4">
+        <div class="row justify-content-center login-container mt-5">
+            <div class="col-md-4 mt-5">
                 <h2 class="texto-site">Imovelnet System - Login</h2>
                 <div class="row">
                     <?php
